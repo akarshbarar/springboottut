@@ -30,5 +30,10 @@ public class AlienServices {
 		alien = list.stream().filter(e->e.getId() == id).findFirst().get();
 		return alien;
 	}
+	
+//	add alien
+	public void addAliens(Alien alien) {
+		list.add(alien);
+	}
 }
 

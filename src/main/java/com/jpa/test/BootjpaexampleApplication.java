@@ -15,28 +15,6 @@ public class BootjpaexampleApplication {
 
 	public static void main(String[] args) {
 	 ApplicationContext context = 	SpringApplication.run(BootjpaexampleApplication.class, args);
-	 
-	 
-	 AlienRepository repo = context.getBean(AlienRepository.class);
-	 List<Alien> aliens = repo.getUsersByName("Akarsh Barar");
-	 aliens.forEach(t -> {
-		 System.out.println(t);
-	 });
-//	 Create
-//	 Alien alien = new Alien();
-//	 alien.setName("Akarsh Barar");
-//	 alien.setCity("Lucknow");
-//	 alien.setStatus("Backend Developer");
-//	 Alien a = repo.save(alien);
-////	READ ALL
-//	 repo.findAll();
-//	 
-////	 Update
-//	 Optional<Alien> optional = repo.findById(2);
-//	 Alien aa = optional.get();
-//	 aa.setName("Updated Name");
-//	 repo.save(aa);
-//	 System.out.println(aa);
 	}
 
 }

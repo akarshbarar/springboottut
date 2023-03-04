@@ -14,10 +14,11 @@ public interface AlienRepository extends CrudRepository<Alien, Integer> {
 	
 	
 	@Query("select a from Alien a")
-	public List<Alien> getAllUser();
+	public List<Alien> getAllAlien();
 	
 	
 	@Query("select a from Alien a where a.name = :n")
 	public List<Alien> getUsersByName(@Param("n") String name);
- 
+	
+	 
 }
